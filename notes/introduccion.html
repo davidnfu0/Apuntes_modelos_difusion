@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introducción a los modelos de difusión – Modelos de Difusión</title>
+<title>Introducción – Modelos de Difusión</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,35 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -175,7 +111,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/introduccion.html">Introducción a los modelos de difusión</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/introduccion.html">Introducción</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -207,7 +143,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../notes/introduccion.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Introducción a los modelos de difusión</span></a>
+ <span class="menu-text">Introducción</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -258,9 +194,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/introduccion.html">Introducción a los modelos de difusión</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/introduccion.html">Introducción</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introducción a los modelos de difusión</h1>
+<h1 class="title">Introducción</h1>
 </div>
 
 
@@ -277,24 +213,11 @@ window.Quarto = {
 </header>
 
 
-<p>Como vimos en la ecuación <span class="math inline">\(\sum_{i=1}^n i = \frac{n(n+1)}{2}\)</span>, el crecimiento es cuadrático.</p>
-<p>A continuación, ejecutamos un bloque de código:</p>
-<div id="80fb4da0" class="cell" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x))</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="introduccion_files/figure-html/cell-2-output-1.png" width="590" height="411" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Al alon le gusta el pico.</p>
+<p>Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.</p>
+<p>Durante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.</p>
+<p>Posteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.</p>
+<p>En este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.</p>
+<p>El objetivo de estos apuntes es estudiar en detalle el marco matemático que subyace a los modelos de difusión, poniendo énfasis en la formulación continua del proceso generativo y en las herramientas analíticas necesarias para comprenderlos de manera rigurosa.</p>
 
 
 
