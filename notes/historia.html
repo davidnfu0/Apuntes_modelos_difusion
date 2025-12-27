@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/historia.html">Historia</a></li></ol></nav>
 <div class="quarto-title">
@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -214,8 +214,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.</p>
-<p>Con el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.</p>
+<div class="justify">
+<p>Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.</p>
+<p>Durante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.</p>
+<p>Posteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.</p>
+<p>En este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.</p>
+</div>
 
 
 
@@ -625,7 +629,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
       <a href="../notes/introduccion.html" class="pagination-link" aria-label="Introducción">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introducción</span>
