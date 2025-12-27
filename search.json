@@ -12,6 +12,18 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nContenidos\n👉 Comienza aquí:\nIntroducción a los modelos de difusión",
+    "crumbs": [
+      "Inicio",
+      "General",
+      "Inicio"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -24,15 +36,15 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Modelos de Difusión",
+    "objectID": "notes/historia.html",
+    "href": "notes/historia.html",
+    "title": "Historia",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nContenidos\n👉 Comienza aquí:\nIntroducción a los modelos de difusión",
+    "text": "La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.\nCon el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.",
     "crumbs": [
       "Inicio",
-      "General",
-      "Modelos de Difusión"
+      "Notas",
+      "Historia"
     ]
   }
 ]
