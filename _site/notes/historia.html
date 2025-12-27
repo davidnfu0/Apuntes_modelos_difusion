@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-969ddfa49e00a70eb3423444dbc81f6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ee5704a680a721dea5cd86faee54b12.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4f9b2a01295a43322f13994ea70e580a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,8 +83,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Modelos de Difusión</span>
     </a>
@@ -124,13 +122,9 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -150,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../notes/introduccion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introducción a los modelos de difusión</span></a>
+ <span class="menu-text">Introducción</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -199,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/introduccion.html">Notas</a></li><li class="breadcrumb-item"><a href="../notes/historia.html">Historia</a></li></ol></nav>
 <div class="quarto-title">
@@ -208,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -220,8 +214,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.</p>
-<p>Con el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.</p>
+<div class="justify">
+<p>Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.</p>
+<p>Durante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.</p>
+<p>Posteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.</p>
+<p>En este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.</p>
+</div>
 
 
 
@@ -631,10 +629,10 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="../notes/introduccion.html" class="pagination-link" aria-label="Introducción a los modelos de difusión">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introducción a los modelos de difusión</span>
+      <a href="../notes/introduccion.html" class="pagination-link" aria-label="Introducción">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introducción</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

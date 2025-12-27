@@ -41,6 +41,8 @@ format:
     code-overflow: wrap
     highlight-style: github-dark
     link-external-newwindow: true
+    page-layout: full
+
 
 jupyter:
   kernelspec:

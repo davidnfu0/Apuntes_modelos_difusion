@@ -1,18 +1,7 @@
 ---
-title: "Introducción a los modelos de difusión"
+title: "Introducción"
 ---
+::: {.justify}
 
-Como vimos en la ecuación $\sum_{i=1}^n i = \frac{n(n+1)}{2}$, el crecimiento es cuadrático.
-
-A continuación, ejecutamos un bloque de código:
-
-```{python}
-import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.linspace(0, 10, 100)
-plt.plot(x, np.sin(x))
-plt.show()
-```
-
-Al alon le gusta el pico.
+El objetivo de estos apuntes es estudiar en detalle el marco matemático que subyace a los modelos de difusión, poniendo énfasis en la formulación continua del proceso generativo y en las herramientas analíticas necesarias para comprenderlos de manera rigurosa.
+:::
