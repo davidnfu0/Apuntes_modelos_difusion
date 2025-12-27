@@ -1,25 +1,50 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Modelos de Difusión"
+  page-navigation: true
+
   navbar:
+    background: dark
     left:
       - href: index.qmd
-        text: Home
+        text: Inicio
       - href: about.qmd
         text: About
 
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - section: "Notas"
+        contents:
+          - notes/introduccion.qmd
+          - notes/historia.qmd
+      - section: "General"
+        contents:
+          - index.qmd
+          - about.qmd
+
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: darkly
     css: styles.css
     toc: true
+    toc-location: right
+    toc-title: "Contenido"
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github-dark
+    link-external-newwindow: true
 
-jupyter:
-  kernelspec:
-    language: python
-    name: quarto-diffusion
-    display_name: "Python (quarto-diffusion)"
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+
+bibliography: references.bib

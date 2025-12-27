@@ -4,20 +4,47 @@
     "href": "notes/introduccion.html",
     "title": "Introducción a los modelos de difusión",
     "section": "",
-    "text": "Como vimos en la ecuación \\(\\sum_{i=1}^n i = \\frac{n(n+1)}{2}\\), el crecimiento es cuadrático.\nA continuación, ejecutamos un bloque de código:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()"
+    "text": "Como vimos en la ecuación \\(\\sum_{i=1}^n i = \\frac{n(n+1)}{2}\\), el crecimiento es cuadrático.\nA continuación, ejecutamos un bloque de código:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()",
+    "crumbs": [
+      "Inicio",
+      "Notas",
+      "Introducción a los modelos de difusión"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nContenidos\n👉 Comienza aquí:\nIntroducción a los modelos de difusión",
+    "crumbs": [
+      "Inicio",
+      "General",
+      "Inicio"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site",
+    "crumbs": [
+      "Inicio",
+      "General",
+      "About"
+    ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Modelos de Difusión",
+    "objectID": "notes/historia.html",
+    "href": "notes/historia.html",
+    "title": "Historia",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nContenidos\n\nnotes/introduccion.qmd"
+    "text": "La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.\nCon el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.",
+    "crumbs": [
+      "Inicio",
+      "Notas",
+      "Historia"
+    ]
   }
 ]

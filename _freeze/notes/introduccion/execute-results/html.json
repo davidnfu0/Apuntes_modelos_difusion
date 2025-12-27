@@ -1,0 +1,12 @@
+{
+  "hash": "2f4f6d1485f75a233ec496f4d7feefd8",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Introducción a los modelos de difusión\"\n---\n\nComo vimos en la ecuación $\\sum_{i=1}^n i = \\frac{n(n+1)}{2}$, el crecimiento es cuadrático.\n\nA continuación, ejecutamos un bloque de código:\n\n::: {#c31d2737 .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](introduccion_files/figure-html/cell-2-output-1.png){width=590 height=411}\n:::\n:::\n\n\n",
+    "supporting": [
+      "introduccion_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

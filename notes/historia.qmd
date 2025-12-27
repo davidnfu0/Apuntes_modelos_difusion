@@ -1,0 +1,8 @@
+---
+title: "Historia"
+---
+
+La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.
+
+Con el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.
+
