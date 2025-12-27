@@ -1,0 +1,35 @@
+name: quarto-diffusion
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+
+  # Ciencia de datos básica
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # ML / Deep Learning
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # Visualización avanzada
+  - plotly
+
+  # Notebooks / kernels
+  - jupyter
+  - ipykernel
+
+  # Utilidades científicas
+  - tqdm
+  - pyyaml
+
+  # Pip extra (siempre al final)
+  - pip:
+      - einops
+      - rich

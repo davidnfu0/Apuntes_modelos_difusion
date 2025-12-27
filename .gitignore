@@ -78,3 +78,6 @@ Referencias/
 
 # Ref
 /referencias
+
+/.quarto/
+**/*.quarto_ipynb

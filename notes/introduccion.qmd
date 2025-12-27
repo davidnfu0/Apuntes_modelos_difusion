@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 1: Fundamentos"
+title: "Introducción a los modelos de difusión"
 ---
 
 Como vimos en la ecuación $\sum_{i=1}^n i = \frac{n(n+1)}{2}$, el crecimiento es cuadrático.
