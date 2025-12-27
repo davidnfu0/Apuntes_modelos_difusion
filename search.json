@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "notes/introduccion.html",
+    "href": "notes/introduccion.html",
+    "title": "Introducción a los modelos de difusión",
+    "section": "",
+    "text": "Como vimos en la ecuación \\(\\sum_{i=1}^n i = \\frac{n(n+1)}{2}\\), el crecimiento es cuadrático.\nA continuación, ejecutamos un bloque de código:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modelos de Difusión",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
