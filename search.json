@@ -4,7 +4,11 @@
     "href": "notes/introduccion.html",
     "title": "Introducción a los modelos de difusión",
     "section": "",
-    "text": "Como vimos en la ecuación \\(\\sum_{i=1}^n i = \\frac{n(n+1)}{2}\\), el crecimiento es cuadrático.\nA continuación, ejecutamos un bloque de código:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()"
+    "text": "Como vimos en la ecuación \\(\\sum_{i=1}^n i = \\frac{n(n+1)}{2}\\), el crecimiento es cuadrático.\nA continuación, ejecutamos un bloque de código:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()",
+    "crumbs": [
+      "Inicio",
+      "Introducción a los modelos de difusión"
+    ]
   },
   {
     "objectID": "about.html",
