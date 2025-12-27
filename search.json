@@ -12,15 +12,15 @@
     ]
   },
   {
-    "objectID": "notes/historia.html",
-    "href": "notes/historia.html",
-    "title": "Historia",
+    "objectID": "notes/ejemplos_numericos.html",
+    "href": "notes/ejemplos_numericos.html",
+    "title": "Ejemplos Numéricos",
     "section": "",
-    "text": "La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.\nCon el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.",
+    "text": "Hola\n\\[\n\\int_0^1 x^2 \\, dx = \\frac{1}{3}\n\\]\n\\[\ne^{i\\pi} + 1 = 0\n\\]\n\ndef function(x):\n  print(x)",
     "crumbs": [
       "Inicio",
       "Notas",
-      "Historia"
+      "Ejemplos Numéricos"
     ]
   },
   {
@@ -48,15 +48,15 @@
     ]
   },
   {
-    "objectID": "notes/ejemplos_numericos.html",
-    "href": "notes/ejemplos_numericos.html",
-    "title": "Ejemplos Numéricos",
+    "objectID": "notes/historia.html",
+    "href": "notes/historia.html",
+    "title": "Historia",
     "section": "",
-    "text": "Hola\n\\[\n\\int_0^1 x^2 \\, dx = \\frac{1}{3}\n\\]\n\\[\ne^{i\\pi} + 1 = 0\n\\]\n\ndef function(x):\n  print(x)",
+    "text": "La historia de los modelos de difusión se remonta a varias décadas atrás, con raíces en la física estadística y el análisis estocástico. Inicialmente, estos modelos se utilizaron para describir procesos físicos como la difusión de partículas en un medio.\nCon el tiempo, los investigadores comenzaron a explorar la aplicación de estos conceptos en el ámbito del aprendizaje automático. Un hito importante fue la introducción de los modelos de difusión latente, que permitieron generar datos complejos a partir de distribuciones simples mediante un proceso de difusión inversa.",
     "crumbs": [
       "Inicio",
       "Notas",
-      "Ejemplos Numéricos"
+      "Historia"
     ]
   }
 ]
