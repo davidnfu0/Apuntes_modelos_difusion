@@ -23,6 +23,7 @@ website:
         contents:
           - notes/introduccion.qmd
           - notes/historia.qmd
+          - notes/ejemplos_numericos.qmd
       - section: "General"
         contents:
           - index.qmd
@@ -40,6 +41,12 @@ format:
     code-overflow: wrap
     highlight-style: github-dark
     link-external-newwindow: true
+
+jupyter:
+  kernelspec:
+    language: python
+    name: quarto-diffusion
+    display_name: "Python (quarto-diffusion)"
 
 execute:
   echo: true

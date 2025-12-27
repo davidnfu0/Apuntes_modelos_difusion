@@ -1,0 +1,12 @@
+{
+  "hash": "776f3194f3799444cc0e5903654f9ed8",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Ejemplos Numéricos\"\n---\n\nHola \n\n$$\n\\int_0^1 x^2 \\, dx = \\frac{1}{3}\n$$\n\n$$\ne^{i\\pi} + 1 = 0\n$$\n\n::: {#feae28d7 .cell execution_count=1}\n``` {.python .cell-code}\ndef function(x):\n  print(x)\n```\n:::\n\n\n",
+    "supporting": [
+      "ejemplos_numericos_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

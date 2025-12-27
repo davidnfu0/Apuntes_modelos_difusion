@@ -1,10 +1,10 @@
 {
-  "hash": "2f4f6d1485f75a233ec496f4d7feefd8",
+  "hash": "2edd92610d60dd4cc2f4b6e824c4a5b1",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"Introducción a los modelos de difusión\"\n---\n\nComo vimos en la ecuación $\\sum_{i=1}^n i = \\frac{n(n+1)}{2}$, el crecimiento es cuadrático.\n\nA continuación, ejecutamos un bloque de código:\n\n::: {#c31d2737 .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](introduccion_files/figure-html/cell-2-output-1.png){width=590 height=411}\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: \"Introducción a los modelos de difusión\"\n---\n\nComo vimos en la ecuación $\\sum_{i=1}^n i = \\frac{n(n+1)}{2}$, el crecimiento es cuadrático.\n\nA continuación, ejecutamos un bloque de código:\n\n::: {#80fb4da0 .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](introduccion_files/figure-html/cell-2-output-1.png){width=590 height=411}\n:::\n:::\n\n\nAl alon le gusta el pico.\n\n",
     "supporting": [
-      "introduccion_files"
+      "introduccion_files/figure-html"
     ],
     "filters": [],
     "includes": {}
