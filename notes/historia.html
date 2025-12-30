@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../notes/ejemplos_numericos.html" rel="next">
+<link href="../notes/modelos_difusion.html" rel="next">
 <link href="../notes/introduccion.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -155,6 +155,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../notes/modelos_difusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modelos de difusión</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../notes/ejemplos_numericos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ejemplos Numéricos</span></a>
   </div>
@@ -215,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="justify">
-<p>Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.</p>
+<p>Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados como imágenes, audio, video y texto con un alto grado de regularidad estadística y similitud con los datos reales.</p>
 <p>Durante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.</p>
 <p>Posteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.</p>
 <p>En este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.</p>
@@ -636,8 +642,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notes/ejemplos_numericos.html" class="pagination-link" aria-label="Ejemplos Numéricos">
-        <span class="nav-page-text">Ejemplos Numéricos</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notes/modelos_difusion.html" class="pagination-link" aria-label="Modelos de difusión">
+        <span class="nav-page-text">Modelos de difusión</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
