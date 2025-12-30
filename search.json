@@ -1,38 +1,14 @@
 [
   {
-    "objectID": "notes/introduccion.html",
-    "href": "notes/introduccion.html",
-    "title": "Introducción",
+    "objectID": "notes/historia.html",
+    "href": "notes/historia.html",
+    "title": "Historia",
     "section": "",
-    "text": "El objetivo de estos apuntes es estudiar en detalle el marco matemático que subyace a los modelos de difusión, poniendo énfasis en la formulación continua del proceso generativo y en las herramientas analíticas necesarias para comprenderlos de manera rigurosa.",
+    "text": "Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.\nDurante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.\nPosteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.\nEn este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.",
     "crumbs": [
       "Inicio",
       "Notas",
-      "Introducción"
-    ]
-  },
-  {
-    "objectID": "notes/ejemplos_numericos.html",
-    "href": "notes/ejemplos_numericos.html",
-    "title": "Ejemplos Numéricos",
-    "section": "",
-    "text": "Hola\n\\[\n\\int_0^1 x^2 \\, dx = \\frac{1}{3}\n\\]\n\\[\ne^{i\\pi} + 1 = 0\n\\]\n\ndef function(x):\n  print(x)",
-    "crumbs": [
-      "Inicio",
-      "Notas",
-      "Ejemplos Numéricos"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site",
-    "crumbs": [
-      "Inicio",
-      "General",
-      "About"
+      "Historia"
     ]
   },
   {
@@ -48,15 +24,39 @@
     ]
   },
   {
-    "objectID": "notes/historia.html",
-    "href": "notes/historia.html",
-    "title": "Historia",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Desde sus inicios, la inteligencia artificial (IA) estuvo orientada principalmente a tareas de predicción, como clasificación y regresión. Sin embargo, a partir de la década de 2010, el foco comenzó a desplazarse hacia el aprendizaje generativo, cuyo objetivo es modelar y muestrear distribuciones de probabilidad de alta complejidad y dimensionalidad. Este cambio permitió la generación de objetos estructurados —imágenes, audio, video y texto— con un alto grado de regularidad estadística y similitud con los datos reales.\nDurante esta etapa inicial del aprendizaje generativo profundo, dos enfoques dominaron el lenguaje moderno de los modelos generativos. En 2013, los autoencoders variacionales (VAEs) introdujeron un modelo probabilístico latente entrenado mediante máxima verosimilitud variacional, caracterizado por una formulación estadística clara y un entrenamiento estable. No obstante, las aproximaciones variacionales tienden a inducir distribuciones latentes excesivamente simples, lo que suele traducirse en muestras suavizadas. En 2014, las redes generativas adversarias (GANs) reformularon el problema generativo como un juego minimax entre una red generadora y una discriminadora, logrando muestras de alta calidad visual, pero a costa de dinámicas de entrenamiento inestables, alta sensibilidad a la inicialización y problemas recurrentes como el colapso de modos.\nPosteriormente, surgieron otros enfoques con mayor fidelidad estadística. Los modelos autorregresivos (2015) modelan explícitamente la factorización de la distribución conjunta, mientras que los normalizing flows (2016) construyen transformaciones invertibles con densidades explícitas. Si bien ambos ofrecen fundamentos probabilísticos sólidos, presentan limitaciones prácticas relevantes: los modelos autorregresivos requieren muestreos secuenciales costosos, y los flujos imponen restricciones estructurales que dificultan su escalamiento a distribuciones altamente complejas.\nEn este contexto aparecen los modelos de difusión, propuestos conceptualmente en 2015, que introducen la idea de un proceso estocástico que degrada progresivamente los datos hacia ruido y aprende una dinámica inversa para su reconstrucción. Sin embargo, esta idea no se consolidó en la práctica sino hasta 2020, con la introducción de los Denoising Diffusion Probabilistic Models (DDPM), que resolvieron problemas de inestabilidad en el entrenamiento y permitieron generar muestras de alta calidad de manera consistente. Desde entonces, los modelos de difusión han prevalecido frente a enfoques anteriores y se han consolidado como el paradigma dominante para generación de alta calidad. Sistemas ampliamente conocidos como Stable Diffusion, DALL·E (2 y 3) y Midjourney se basan en este tipo de modelos.",
+    "text": "About this site",
+    "crumbs": [
+      "Inicio",
+      "General",
+      "About"
+    ]
+  },
+  {
+    "objectID": "notes/ejemplos_numericos.html",
+    "href": "notes/ejemplos_numericos.html",
+    "title": "Ejemplos Numéricos",
+    "section": "",
+    "text": "Hola\n\\[\n\\int_0^1 x^2 \\, dx = \\frac{1}{3}\n\\]\n\\[\ne^{i\\pi} + 1 = 0\n\\]\n\ndef function(x):\n  print(x)",
     "crumbs": [
       "Inicio",
       "Notas",
-      "Historia"
+      "Ejemplos Numéricos"
+    ]
+  },
+  {
+    "objectID": "notes/introduccion.html",
+    "href": "notes/introduccion.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "El objetivo de estos apuntes es estudiar en detalle el marco matemático que subyace a los modelos de difusión, poniendo énfasis en la formulación continua del proceso generativo y en las herramientas analíticas necesarias para comprenderlos de manera rigurosa.",
+    "crumbs": [
+      "Inicio",
+      "Notas",
+      "Introducción"
     ]
   }
 ]
